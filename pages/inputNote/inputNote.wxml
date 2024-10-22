@@ -1,0 +1,45 @@
+<!--pages/inputNote/inputNote.wxml-->
+<view class="container">
+  <view class="section" style="font-size: {{fontSize}}rpx;">
+    <view class="section__title" style="font-size: {{fontSize}}rpx;">图片名称</view>
+    <input class="section__input" type="text" placeholder="请输入图片名称" bindinput="inputName" style="font-size: {{fontSize}}rpx;" value="{{name}}"/>
+  </view>
+  <view class="section">
+    <view class="section__title" style="font-size: {{fontSize}}rpx;">医嘱用药</view>
+    <textarea class="section__textarea" placeholder="请输入医嘱用药信息" bindinput="inputOrder" style="font-size: {{fontSize}}rpx;" value="{{order}}"/>
+  </view>
+  <view class="section">
+    <view class="section__title" style="font-size: {{fontSize}}rpx;">笔记</view>
+    <textarea class="section__textarea" placeholder="请输入笔记" bindinput="inputNote" style="font-size: {{fontSize}}rpx;" value="{{note}}"/>
+  </view>
+  <view class="section">
+
+  <view class="section__title" style="font-size: {{fontSize}}rpx;">关注内容</view>
+  
+  <checkbox-group style="font-size: {{fontSize}}rpx; margin-top: 20rpx;" bindchange="checkboxChange">
+  <label>
+    <checkbox value="酒" checked="{{checkboxValues['酒']}}"/> 酒
+  </label>
+  <label>
+    <checkbox value="儿童" checked="{{checkboxValues['儿童']}}"/> 儿童
+  </label>
+  <label>
+    <checkbox value="孕妇" checked="{{checkboxValues['孕妇']}}"/> 孕妇
+  </label>
+  <label>
+    <checkbox value="老年人" checked="{{checkboxValues['老年人']}}"/> 老年人
+  </label>
+  <label>
+    <checkbox value="过敏" checked="{{checkboxValues['过敏']}}"/> 过敏
+  </label>
+</checkbox-group>
+
+
+  <view class="section__title" style="font-size: {{fontSize}}rpx; margin-top: 20rpx;">自定义关注内容</view>
+
+  <input class="section__input" type="text" placeholder="请输入自定义高亮词汇，多个词汇请用逗号分隔" bindinput="inputHighlightWord" style="font-size: {{fontSize}}rpx;" value="{{customHighlightWord}}"/>
+
+  </view>
+  
+  <button bindtap="submit" style="font-size: {{fontSize}}rpx;">提交</button>
+</view>

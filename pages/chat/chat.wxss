@@ -1,0 +1,60 @@
+/* pages/contact/contact.wxss */
+
+page {
+  background-color: #f1f1f1;
+}
+
+.inputRoom {
+  width: 100%;
+  height: 16vw;
+  border-top: 1px solid #cdcdcd;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+.btnBox {
+  background: rgb(95, 178, 90);
+  color: #fff; /* 设置按钮文字颜色为白色 */
+  border-radius: 5px; /* 设置按钮边角为圆角 */
+  padding: 5px 10px; /* 设置按钮内边距 */
+  font-size: 16px; /* 设置按钮文字大小 */
+  text-align: center; /* 设置按钮文字居中 */
+  margin-left: 10px; /* 设置按钮与输入框的间距 */
+}
+
+
+input {
+  width: 76vw;
+  height: 9.33vw;
+  background-color: #fff;
+  border-radius: 40rpx;
+  margin-left: 2vw;
+  padding: 0 3vw;
+  font-size: 28rpx;
+  color: #444;
+}
+
+.leftMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #fff;
+  margin-left: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+
+.rightMsg {
+  font-size: 35rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #96EB6A;
+  margin-right: -1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}

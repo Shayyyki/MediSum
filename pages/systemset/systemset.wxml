@@ -1,0 +1,9 @@
+<!--pages/systemset/systemset.wxml-->
+<view class="settings-container">
+
+  <view class="settings-item">
+    <text class="settings-text" style="font-size: {{fontSize}}rpx;">字号大小</text>
+  </view>
+  <slider class="settings-slider" value="{{volume}}" min="30" max="80" show-value bindchange="onVolumeSliderChange"></slider>
+
+</view>

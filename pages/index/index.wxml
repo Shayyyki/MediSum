@@ -1,0 +1,23 @@
+<!--pages/ocr.wxml-->
+<view class="image-container">
+  <view wx:for="{{recognizedimagePaths}}" wx:for-item="imageUrl" wx:key="index" class="imageUrl-item" bindtap="viewImageDetail" data-id="{{index}}">
+
+    <view class="imageUrlBox">
+      <image src="{{imagePaths[index]}}" mode="aspectFit" style="width: 100%; height: 150px;"></image>
+    </view>
+
+    <view class='ImageInfo'>
+      <view class='imageName' style="font-size: {{fontSize}}rpx;">{{imageNames[index]}}</view>
+    
+      <view class="delete_btnBox">
+      <button bindtap="deleteImage" data-id="{{index}}" style="font-size: {{fontSize}}rpx;">删除该说明书</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<view class="footer">
+  <button bindtap="doUpload" class="footer-button" style="font-size: {{fontSize}}rpx;">图文识别</button>
+  <button bindtap="goToSettings" class="footer-button" style="font-size: {{fontSize}}rpx;">系统设置</button>
+</view>

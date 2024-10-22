@@ -1,0 +1,10 @@
+<!--pages/imageDetail/imageDetail.wxml-->
+<!-- 识别按钮 -->
+<view class="btnimgBox">
+        <button bindtap="doedit" style="font-size: {{fontSize}}rpx;">1.编辑信息及笔记</button>
+        <button bindtap="doocr" style="font-size: {{fontSize}}rpx;">2.查看原文</button>
+        <button bindtap="dosimplify" style="font-size: {{fontSize}}rpx;">3.简化大纲</button>
+        <button bindtap="dosearch" style="font-size: {{fontSize}}rpx;">4.检索内容</button>
+        <button bindtap="dochat" style="font-size: {{fontSize}}rpx;">5.智能对话</button>
+</view>
+

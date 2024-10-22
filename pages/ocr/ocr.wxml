@@ -1,0 +1,25 @@
+<!--pages/ocr/ocr.wxml-->
+<text style="font-size: {{fontSize}}rpx;">说明书识别出来的内容如下：</text>
+<!-- <view class="contantBox">
+    识别出来的内容：<text>{{item.contant}}</text>
+</view> -->
+<!-- <scroll-view class="listBody" scroll-y="true" style='{{ scrollListHeight + "px" }}'>
+  <view wx:for="{{words}}" wx:key="unique" >
+  {{item.words}}
+  </view>
+</scroll-view> -->
+<!--pages/ocr/ocr.wxml-->
+<!-- 
+<view class="imgBox">
+    <image src="data:image/png;base64,{{ocr_imageUrl}}" mode="aspectFit" />
+</view> -->
+<scroll-view class="listBody" scroll-y="true" style='height:100%'>
+  <text wx:space="preserve" style="font-size: {{fontSize}}rpx;">{{content}}</text>
+
+</scroll-view>
+
+
+
+
+
+

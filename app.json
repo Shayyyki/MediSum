@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/imageDetail/imageDetail",
+    "pages/inputNote/inputNote",
+    "pages/ocr/ocr",
+    "pages/simplify/simplify",
+    "pages/search/search",
+    "pages/chat/chat",
+    "pages/systemset/systemset"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Medisum",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

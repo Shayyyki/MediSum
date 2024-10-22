@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power">
+  <view class="power_info" data-index="{{index}}" bindtap="onClickPowerInfo">
+    <view class="power_info_text">
+      <view class="power_info_text_title" style="font-size: {{fontSize}}rpx;">{{power.title}}</view>
+      <view class="power_info_text_tip" style="font-size: {{fontSize}}rpx;">{{power.tip}}</view>
+    </view>
+    <image wx:if="{{!power.showItem}}" class="power_info_more" src="../../images/arrow.svg"></image>
+    <image wx:if="{{power.showItem}}" class="power_info_less" src="../../images/arrow.svg"></image>
+  </view>
+  <view wx:if="{{power.showItem}}">
+    <view wx:key="title" wx:for="{{power.item}}">
+      <view class="line"></view>
+      <view class="power_item">
+        <text class="power_item_title" wx:space="preserve" style="font-size: {{fontSize}}rpx;">{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<cloud-tip-modal showUploadTipProps="{{showUploadTip}}"></cloud-tip-modal>
+

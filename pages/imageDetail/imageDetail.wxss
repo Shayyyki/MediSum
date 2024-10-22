@@ -1,0 +1,22 @@
+/* pages/imageDetail/imageDetail.wxss */
+
+page {
+  background-color: #f6f6f6;
+}
+
+.btnimgBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* 按钮垂直排列 */
+  align-items: flex-start; /* 按钮左对齐 */
+  margin: 30rpx 25rpx;
+}
+
+.btnimgBox button {
+  border-radius: 5rpx;
+  background: white;
+  color: #000000;
+  width: 100%; /* 调整按钮的宽度 */
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+}

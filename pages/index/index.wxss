@@ -1,0 +1,102 @@
+/* pages/ocr.wxss */
+
+page {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column; 
+}
+
+.btnBox {
+  margin: 30rpx 25rpx;
+}
+
+.btnBox button {
+  border-radius: 5rpx;
+  background: rgb(95, 178, 90);
+  color: white;
+  font-size: 35rpx;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; 
+  margin: 30rpx 25rpx;
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 1rpx;
+  margin-bottom: 200px; /* 你可以根据需要调整这个值 */
+}
+
+.imageUrl-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  justify-content: space-between;
+  padding: 30rpx 25rpx;
+  position: relative; /* 设置为 relative，使其子元素可以相对于它定位 */
+  width: 100%; /* 明确设置宽度 */
+}
+
+/* name和button的样式 */
+.imageInfo {
+  /* 将name和button的容器的宽度设置为右半边的50% */
+  width: 50%;
+  /* 设置为flex布局，并垂直排列子元素 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delete_btnBox {
+  font-size: 30rpx;
+  position: relative; /* 设置为 relative，使其可以相对于父元素定位 */
+}
+
+.delete_btnBox button {
+  border-radius: 5rpx;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 38, 255);
+  font-size: 35rpx;
+  text-decoration: underline; /* 添加下划线 */
+}
+
+.imageName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 30rpx;
+}
+/* url的样式 */
+.imageUrl {
+  /* 将url的宽度设置为左半边的50% */
+  width: 50%;
+}
+.imageUrlBox {
+  flex: 1;
+  width: 50%;
+  /* height: 30rpx; */
+
+  /* 修改imageUrlBox的布局为flex，并水平排列子元素 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;  /* 可以根据需要更改背景颜色 */
+  padding: 1px 0;
+  border-top: 1px solid #bdbbbb;  /* 添加顶部边框 */
+}
+
+.footer-button {
+  flex: 1;
+  max-width: 45%;  /* 保证两个按钮之间有一些间距 */
+  margin: 0 2%;  /* 为按钮添加一些外边距 */
+}

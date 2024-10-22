@@ -1,0 +1,6 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <input class="input" bindinput="inputChange" style="font-size: {{fontSize}}rpx;" placeholder="请输入检索内容" />
+  <button bindtap="search" style="font-size: {{fontSize}}rpx;" class="button">确认检索</button>
+  <view class="result" style="font-size: {{fontSize}}rpx;">{{result}}</view>
+</view>
